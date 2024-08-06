@@ -1,21 +1,21 @@
-frontend/node_modules
+node_modules
 .idea
 
 # Output
-frontend/.svelte-kit
-frontend/build
+.svelte-kit
+build
 
 # OS
 .DS_Store
 Thumbs.db
 
 # Env
-frontend/.env
-frontend/.env.*
-frontend/!.env.example
-frontend/!.env.test
+.env
+.env.*
+!.env.example
+!.env.test
 
 # Vite
-frontend/vite.config.js.timestamp-*
-frontend/vite.config.ts.timestamp-*
-!/frontend/package-lock.json
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+!/package-lock.json

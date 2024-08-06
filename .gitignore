@@ -18,3 +18,4 @@ frontend/!.env.test
 # Vite
 frontend/vite.config.js.timestamp-*
 frontend/vite.config.ts.timestamp-*
+!/frontend/package-lock.json

@@ -3,19 +3,24 @@ import { defineConfig } from 'vitest/config';
 import * as path from 'path';
 
 export default defineConfig({
-	plugins: [sveltekit()],
-	test: {
-		include: ['src/**/*.{test,spec}.{js,ts}'],
+  plugins: [sveltekit()],
+  test: {
+    include: ['tests/**/*.{test,spec}.{js,ts}'],
     globals: true,
-    environments: 'jsdom',
-    setupFiles: ['src/vitest/setupTests.js'],
-    reports: ['verbose'],
-    restoreMocks: true,
-	},
+    environment: 'jsdom',
+    setupFiles: ['./tests/setupTests.js'],
+    reporters: ['verbose'],
+    restoreMocks: true
+  },
+  server: {
+    fs: {
+      allow: ['static']
+    }
+  },
   resolve: {
     alias: {
-      $routes: path.resolve(__dirname, './src/routes'),
-      $stores: path.resolve(__dirname, './src/stores')
+      $routes: path.resolve(__dirname, 'src/routes'),
+      $style: path.resolve(__dirname, 'src/style')
     }
   }
 });

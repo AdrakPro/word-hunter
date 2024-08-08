@@ -1,5 +1,10 @@
 <script>
-  import '../app.postcss';
+  import '$style/app.postcss'
+  import '$style/global.css';
+  import NavBar from '$lib/nav/NavBar.svelte';
 </script>
 
-<slot />
+<div>
+  <NavBar />
+  <slot />
+</div>

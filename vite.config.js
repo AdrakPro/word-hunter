@@ -19,8 +19,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      $routes: path.resolve(__dirname, 'src/routes'),
-      $style: path.resolve(__dirname, 'src/style')
+      $routes: path.resolve(__dirname, './src/routes'),
+      $style: path.resolve(__dirname, './src/style'),
+      $types: path.resolve(__dirname, './src/types'),
+      $factories: path.resolve(__dirname, './src/factories')
     }
   }
 });

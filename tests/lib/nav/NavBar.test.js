@@ -5,7 +5,7 @@ import {
   screen
 } from '@testing-library/svelte';
 
-describe('NavBar Component', () => {
+describe('NavBar component', () => {
   it('should display a navbar', () => {
     render(NavBar);
     expect(
@@ -16,7 +16,9 @@ describe('NavBar Component', () => {
   it('should toggle user dropdown menu', async () => {
     render(NavBar);
 
-    expect(screen.queryByText('Login')).toBeNull();
+    expect(
+      screen.queryByText('Login')
+    ).not.toBeInTheDocument();
 
     const userMenuButton = screen.getByRole('button', {
       name: /open user menu/i
@@ -26,7 +28,9 @@ describe('NavBar Component', () => {
     expect(screen.queryByText('Login')).toBeInTheDocument();
 
     await fireEvent.click(userMenuButton);
-    expect(screen.queryByText('Login')).toBeNull();
+    expect(
+      screen.queryByText('Login')
+    ).not.toBeInTheDocument();
   });
   // TODO: Test it with something else than jsdom (it dont work well with media queries)
   // describe('Smaller screens', () => {

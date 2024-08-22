@@ -3,6 +3,7 @@ import ts from 'typescript-eslint';
 import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
 import globals from 'globals';
+import vitest from '@vitest/eslint-plugin';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -16,9 +17,10 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.node,
-        ...globals.jest
+        ...globals.jest,
+        ...vitest.environments.env.globals
       }
-    }
+    },
   },
   {
     files: ['**/*.svelte'],

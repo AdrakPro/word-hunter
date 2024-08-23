@@ -1,13 +1,6 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
-    "paths": {
-      "$lib/*": ["src/lib/*"],
-      "$routes/*": ["/src/routes/*"],
-      "$style/*": ["src/style/*"],
-      "$types/*": ["src/types/*"],
-      "$factories/*": ["src/factories/*"],
-    },
     "allowJs": true,
     "checkJs": false,
     "esModuleInterop": true,

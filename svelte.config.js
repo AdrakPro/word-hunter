@@ -14,6 +14,13 @@ const config = {
     adapter: adapterStatic({
       fallback: 'app.html'
     }),
+
+    alias: {
+      '$routes/*': './src/routes/*',
+      '$style/*': './src/style/*',
+      '$types/*': './src/types/*',
+      '$factories/*': './src/factories/*'
+    }
   }
 };
 

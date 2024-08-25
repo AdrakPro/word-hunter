@@ -18,11 +18,7 @@
     href="/"
     class="flex items-center space-x-3 rtl:space-x-reverse"
   >
-    <img
-      src="favicon.png"
-      class="h-8"
-      alt="WordHunter Logo"
-    />
+    <img src="favicon.png" class="h-8" alt="WordHunter Logo" />
     <span
       class="self-center text-2xl font-semibold whitespace-nowrap text-white"
       >WordHunter</span
@@ -51,8 +47,7 @@
         id="user-dropdown"
       >
         <div class="px-4 py-3">
-          <span
-            class="block text-sm text-primary font-medium"
+          <span class="block text-sm text-primary font-medium"
             >Adam</span
           >
         </div>
@@ -117,28 +112,28 @@
         <li>
           <a
             href="/"
-            class="block py-2 px-3 rounded md:hover:bg-transparent md:hover:text-primary-500 md:p-0"
+            class="block py-2 px-3 rounded hover:bg-transparent hover:text-primary-500 md:p-0"
             aria-current="page">Dashboard</a
           >
         </li>
         <li>
           <a
             href="/collection"
-            class="block py-2 px-3 rounded md:hover:bg-transparent md:hover:text-primary-500 md:p-0"
+            class="block py-2 px-3 rounded hover:bg-transparent hover:text-primary-500 md:p-0"
             >Collection</a
           >
         </li>
         <li>
           <a
             href="/learn"
-            class="block py-2 px-3 rounded md:hover:bg-transparent md:hover:text-primary-500 md:p-0"
+            class="block py-2 px-3 rounded hover:bg-transparent hover:text-primary-500 md:p-0"
             >Learn</a
           >
         </li>
         <li>
           <a
             href="/achievements"
-            class="block py-2 px-3 rounded md:hover:bg-transparent md:hover:text-primary-500 md:p-0"
+            class="block py-2 px-3 rounded hover:bg-transparent hover:text-primary-500 md:p-0"
             >Achievements</a
           >
         </li>

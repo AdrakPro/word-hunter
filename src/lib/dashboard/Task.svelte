@@ -33,7 +33,7 @@
 </script>
 
 <div
-  class="p-8 my-4 mx-4 max-w-64 text-white border-2 space-y-1 rounded-2xl border-primary-300 hover:border-primary-400 select-none flex flex-col justify-center items-center text-center"
+  class="p-6 m-4 max-w-64 text-white border-2 space-y-1 rounded-2xl border-primary-300 hover:border-primary-400 select-none flex flex-col justify-center items-center text-center shadow-md"
 >
   <div class="content-center">
     <span class="font-semibold">{task.task_text}</span>

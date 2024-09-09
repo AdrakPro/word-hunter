@@ -4,10 +4,13 @@
   import { onMount } from 'svelte';
 
   export let tasks_amount;
-  let particles_to_show;
 
   const calculateParticlesToShow = () => {
-    return Math.min(Math.floor(innerWidth / 250), tasks_amount);
+    const task_width = 250;
+    return Math.min(
+      Math.floor(innerWidth / task_width),
+      tasks_amount
+    );
   };
 
   $: particles_to_show = calculateParticlesToShow();

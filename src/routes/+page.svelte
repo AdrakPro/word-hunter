@@ -1,6 +1,7 @@
 <script lang="ts">
   import TaskComponent from '$lib/dashboard/Task.svelte';
   import TaskCarousel from '$lib/dashboard/TaskCarousel.svelte';
+  import WordHunterButton from '$lib/dashboard/WordHunterButton.svelte';
   import { createTask } from '$factories/taskFactory';
   import type { Task } from '$types/task.ts';
 
@@ -21,6 +22,9 @@
       <TaskComponent {task} />
     {/each}
   </TaskCarousel>
+</section>
+<section>
+  <WordHunterButton is_on={false} />
 </section>
 <hr class="w-4/5 h-1 mx-auto bg-gray-400 border-0 rounded" />
 <section></section>

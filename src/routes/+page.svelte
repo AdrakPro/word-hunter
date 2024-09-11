@@ -3,6 +3,7 @@
   import TaskCarousel from '$lib/dashboard/TaskCarousel.svelte';
   import WordHunterButton from '$lib/dashboard/WordHunterButton.svelte';
   import HistoryTable from '$lib/dashboard/HistoryTable.svelte';
+  import Statistics from '$lib/dashboard/Statistics.svelte';
   import { createTask } from '$factories/taskFactory';
   import type { Task } from '$types/task.ts';
 
@@ -27,7 +28,11 @@
 <section>
   <WordHunterButton is_on={false} />
 </section>
-<hr class="w-5/6 h-1 mx-auto bg-gray-400 border-0 rounded" />
+<!-- todo make hr a progress bar that fills with xp and show level at the end of progress bar "25 lvl"-->
+<hr class="w-[85%] h-1 mx-auto bg-gray-400 border-0 rounded" />
+<section>
+  <Statistics />
+</section>
 <section>
   <HistoryTable />
 </section>

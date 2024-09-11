@@ -45,6 +45,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tauri-apps/plugin-global-shortcut": "^2.0.0-rc.0",
+		"lucide-svelte": "^0.439.0",
 		"svelte-carousel": "^1.0.25"
 	}
 }

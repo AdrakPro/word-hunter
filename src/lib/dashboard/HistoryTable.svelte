@@ -19,18 +19,30 @@
       language: 'Spanish',
       type: 'verb',
       xp: 160
+    },
+    {
+      word: 'correr',
+      language: 'Spanish',
+      type: 'verb',
+      xp: 160
+    },
+    {
+      word: 'correr',
+      language: 'Spanish',
+      type: 'verb',
+      xp: 160
     }
   ];
 </script>
 
 <div
-  class="flex relative justify-center items-center overflow-x-auto rounded-lg"
+  class="flex mb-auto justify-center items-center overflow-x-auto rounded-lg"
 >
   <table
-    class="w-4/5 mt-4 text-sm text-left text-white rounded-lg"
+    class="w-[85%] mt-10 text-sm text-left text-white rounded-lg"
   >
     <thead
-      class="text-xs text-primary-300 uppercase bg-gray-500"
+      class="text-xs text-primary-400 uppercase bg-gray-500"
     >
       <tr>
         {#each Object.keys(table_data[0]) as column_heading}

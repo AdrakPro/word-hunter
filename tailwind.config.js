@@ -55,7 +55,7 @@ export default {
         900: '#dadada'
       },
       white: {
-        DEFAULT: '#FDF0D5'
+        DEFAULT: '#fdf0d5'
       }
     },
     extend: {}

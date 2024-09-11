@@ -1,8 +1,12 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
   scroll-behavior: smooth;
   background: rgb(65,65,65);
+  overflow-x: hidden;
 }

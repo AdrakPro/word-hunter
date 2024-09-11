@@ -47,3 +47,4 @@
     <span>{task.current_progress}/{task.max_progress}</span>
   </div>
 </div>
+<!--todo make tasks smaller for mobile -->

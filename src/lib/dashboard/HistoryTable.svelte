@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { TableCell } from '$types/tableCell';
 
+  // todo add pagination and under table number of page
   export let table_data: TableCell[] = [
     {
       word: 'banana',

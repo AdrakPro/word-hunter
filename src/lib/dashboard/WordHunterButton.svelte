@@ -4,7 +4,6 @@
   const toggleButton = (): boolean => (is_on = !is_on);
 </script>
 
-<!-- todo Add transition animation for button hovering -->
 <div class="flex mb-8 justify-center">
   <button
     class="px-16 py-5 border-2 rounded-3xl font-semibold text-gray-400 border-gray-400 transition shadow-md"

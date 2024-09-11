@@ -2,6 +2,7 @@
   import TaskComponent from '$lib/dashboard/Task.svelte';
   import TaskCarousel from '$lib/dashboard/TaskCarousel.svelte';
   import WordHunterButton from '$lib/dashboard/WordHunterButton.svelte';
+  import HistoryTable from '$lib/dashboard/HistoryTable.svelte';
   import { createTask } from '$factories/taskFactory';
   import type { Task } from '$types/task.ts';
 
@@ -26,5 +27,7 @@
 <section>
   <WordHunterButton is_on={false} />
 </section>
-<hr class="w-4/5 h-1 mx-auto bg-gray-400 border-0 rounded" />
-<section></section>
+<hr class="w-5/6 h-1 mx-auto bg-gray-400 border-0 rounded" />
+<section>
+  <HistoryTable />
+</section>

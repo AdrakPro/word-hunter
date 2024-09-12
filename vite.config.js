@@ -23,7 +23,8 @@ export default defineConfig({
       $style: path.resolve(__dirname, './src/style'),
       $types: path.resolve(__dirname, './src/types'),
       $factories: path.resolve(__dirname, './src/factories'),
-      $utils: path.resolve(__dirname, './src/utils')
+      $utils: path.resolve(__dirname, './src/utils'),
+      $stores: path.resolve(__dirname, '.src/stores')
     }
   }
 });

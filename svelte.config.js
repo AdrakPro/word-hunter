@@ -20,7 +20,8 @@ const config = {
       '$style/*': './src/style/*',
       '$types/*': './src/types/*',
       '$factories/*': './src/factories/*',
-      '$utils/*': './src/utils/*'
+      '$utils/*': './src/utils/*',
+      '$stores/*': './src/stores/*'
     }
   }
 };

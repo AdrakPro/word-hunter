@@ -57,7 +57,8 @@
     padding: 1em 0;
     font-size: 14px;
     border-radius: 1rem 1rem 0.5rem 0.5rem;
-    background-color: #4f4f4f;
+    background-color: #484848;
+    user-select: none;
     border-bottom: 5px solid #22a3cf;
   }
 

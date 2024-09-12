@@ -1,13 +1,13 @@
-<script>
-  let isUserDropdownVisible = false;
-  let isNavbarVisible = true;
+<script lang="ts">
+  let is_user_dropdown_visible: boolean = false;
+  let is_nav_visible: boolean = true;
 
   function toggleUserDropdown() {
-    isUserDropdownVisible = !isUserDropdownVisible;
+    is_user_dropdown_visible = !is_user_dropdown_visible;
   }
 
   function toggleNavbar() {
-    isNavbarVisible = !isNavbarVisible;
+    is_nav_visible = !is_nav_visible;
   }
 </script>
 
@@ -32,7 +32,7 @@
       aria-label="Open user menu"
       class="flex text-sm rounded-full md:me-0 focus:ring-4"
       id="user-menu-button"
-      aria-expanded={isUserDropdownVisible}
+      aria-expanded={is_user_dropdown_visible}
       on:click={toggleUserDropdown}
     >
       <img
@@ -41,7 +41,7 @@
         alt="user avatar"
       />
     </button>
-    {#if isUserDropdownVisible}
+    {#if is_user_dropdown_visible}
       <div
         class="flex-wrap absolute top-full right-0 mt-2 z-50 my-4 min-w-24 text-base list-none divide-y divide-primary rounded-lg shadow bg-gray-400"
         id="user-dropdown"
@@ -81,7 +81,7 @@
       class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       aria-label="open main menu"
       aria-controls="navbar-user"
-      aria-expanded={isNavbarVisible}
+      aria-expanded={is_nav_visible}
       on:click={toggleNavbar}
     >
       <svg
@@ -101,7 +101,7 @@
       </svg>
     </button>
   </div>
-  {#if isNavbarVisible}
+  {#if is_nav_visible}
     <div
       class="pt-2 items-center justify-between w-full md:flex md:w-auto md:order-1"
       id="navbar-user"

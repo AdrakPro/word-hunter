@@ -19,7 +19,8 @@ const config = {
       '$routes/*': './src/routes/*',
       '$style/*': './src/style/*',
       '$types/*': './src/types/*',
-      '$factories/*': './src/factories/*'
+      '$factories/*': './src/factories/*',
+      '$utils/*': './src/utils/*'
     }
   }
 };
